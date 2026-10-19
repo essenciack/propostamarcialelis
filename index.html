@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3f305d">
+  <meta name="description" content="Proposta personalizada da Essência CK para Márcia Lelis: posicionamento digital, conteúdo, tráfego pago, imagem pessoal, vendas e tecnologia para o mercado imobiliário.">
+  <title>Márcia Lelis | Proposta Essência CK</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --purple: #3f305d;
+      --wine: #5b1900;
+      --white: #ffffff;
+      --black: #040404;
+      --paper: #f7f5f8;
+      --muted: #77717f;
+      --line: rgba(63,48,93,.15);
+      --serif: 'Playfair Display', Georgia, serif;
+      --sans: 'DM Sans', Arial, sans-serif;
+      --shadow: 0 22px 70px rgba(31, 21, 45, .10);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 100px; }
+    body { margin: 0; font-family: var(--sans); color: var(--black); background: var(--white); -webkit-font-smoothing: antialiased; }
+    img { max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button, input, select, textarea { font: inherit; }
+    button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid #aa98cc; outline-offset: 3px; }
+    ::selection { background: #e4d9ec; color: var(--purple); }
+
+    .container { width: min(1180px, calc(100% - 48px)); margin: 0 auto; }
+    .section { padding: 112px 0; position: relative; }
+    .section-soft { background: var(--paper); }
+    .section-dark { background: var(--purple); color: var(--white); }
+    .section-wine { background: var(--wine); color: var(--white); }
+    .eyebrow { display: inline-flex; align-items: center; gap: 11px; text-transform: uppercase; letter-spacing: .22em; font-size: 10px; font-weight: 700; line-height: 1.7; }
+    .eyebrow::before { content: ''; width: 28px; height: 1px; background: currentColor; opacity: .65; }
+    .eyebrow.purple { color: var(--purple); }
+    .eyebrow.wine { color: var(--wine); }
+    .serif { font-family: var(--serif); font-weight: 500; letter-spacing: -.045em; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { font-size: clamp(48px, 6.8vw, 88px); line-height: 1.03; margin: 23px 0 24px; }
+    h2 { font-size: clamp(38px, 4.5vw, 62px); line-height: 1.1; margin: 17px 0 20px; }
+    h3 { font-size: 23px; line-height: 1.25; margin-bottom: 12px; }
+    p { line-height: 1.8; }
+    .lead { font-size: clamp(16px, 1.35vw, 19px); line-height: 1.85; max-width: 690px; color: #625b6b; }
+    .section-dark .lead, .section-wine .lead { color: rgba(255,255,255,.78); }
+    .purple-text { color: var(--purple); }
+    .wine-text { color: var(--wine); }
+    .rule { height: 1px; background: var(--line); margin: 25px 0; }
+
+    /* Navigation */
+    .topbar { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.92); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(63,48,93,.09); }
+    .nav-inner { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { display: flex; align-items: center; gap: 12px; min-width: 175px; }
+    .brand img { display: none; max-width: 142px; max-height: 48px; object-fit: contain; }
+    .brand-name { font-family: var(--serif); font-size: 24px; color: var(--purple); letter-spacing: -.05em; line-height: 1; }
+    .brand-caption { font-size: 8px; letter-spacing: .25em; text-transform: uppercase; margin-top: 6px; color: var(--muted); }
+    .nav-links { display: flex; align-items: center; gap: clamp(14px,2.3vw,30px); font-size: 12px; font-weight: 600; color: #51485c; }
+    .nav-links a:not(.btn):hover { color: var(--wine); }
+    .btn { border: 1px solid transparent; display: inline-flex; align-items: center; justify-content: center; gap: 14px; padding: 15px 21px; font-size: 12px; font-weight: 700; letter-spacing: .035em; line-height: 1.3; transition: transform .2s ease, background .2s ease, color .2s ease; cursor: pointer; text-align: center; }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: var(--wine); color: white; border-color: var(--wine); }
+    .btn-primary:hover { background: var(--purple); border-color: var(--purple); }
+    .btn-light { background: white; color: var(--purple); }
+    .btn-light:hover { background: #eee8f2; }
+    .btn-outline { border-color: rgba(255,255,255,.48); color: white; background: transparent; }
+    .btn-outline:hover { background: rgba(255,255,255,.1); }
+    .btn-arrow::after { content: '↗'; font-size: 17px; font-weight: 400; }
+    .mobile-cta { display: none; }
+
+    /* Hero */
+    .hero { background: var(--purple); color: white; min-height: 710px; overflow: hidden; display: flex; align-items: center; position: relative; }
+    .hero::before { content: ''; position: absolute; width: 680px; height: 680px; border: 1px solid rgba(255,255,255,.1); border-radius: 50%; right: -120px; top: -165px; }
+    .hero::after { content: ''; position: absolute; width: 470px; height: 470px; border: 1px solid rgba(255,255,255,.09); border-radius: 50%; right: -15px; top: -60px; }
+    .hero-grid { width: calc(100% - 32px); margin-inline: auto; display: grid; grid-template-columns: minmax(0,1.15fr) minmax(300px,.75fr); align-items: center; gap: clamp(42px,7vw,100px); position: relative; z-index: 1; padding-top: 65px; padding-bottom: 85px; }
+    .hero h1 span { display: block; color: #d9cce5; font-style: italic; }
+    .hero .lead { color: rgba(255,255,255,.8); max-width: 630px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+    .hero-meta { display: flex; align-items: center; gap: 14px; margin-top: 36px; color: rgba(255,255,255,.72); font-size: 11px; letter-spacing: .08em; }
+    .meta-dot { width: 5px; height: 5px; background: #d9cce5; border-radius: 50%; }
+    .hero-visual { position: relative; min-height: 490px; display: flex; align-items: center; justify-content: center; }
+    .hero-orbit { position: absolute; width: min(100%, 440px); aspect-ratio: 1 / 1; border: 1px solid rgba(255,255,255,.28); border-radius: 50%; }
+    .hero-orbit::before, .hero-orbit::after { content: ''; position: absolute; border: 1px solid rgba(255,255,255,.18); border-radius: 50%; }
+    .hero-orbit::before { inset: 23px; }
+    .hero-orbit::after { inset: 48px; }
+    .hero-card { position: relative; isolation: isolate; z-index: 2; width: min(82%, 345px); min-height: 425px; background: rgba(26,17,37,.10); border: 1px solid rgba(255,255,255,.38); padding: 26px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 35px 90px rgba(0,0,0,.22); backdrop-filter: none; }
+    /* Camada de contraste localizada: mantém os textos legíveis sem apagar a fotografia. */
+    .hero-card::before { content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: linear-gradient(180deg, rgba(25,15,36,.52) 0%, rgba(25,15,36,.06) 38%, rgba(25,15,36,.10) 57%, rgba(25,15,36,.78) 100%); }
+    .hero-photo { display: none; position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 34%; opacity: 1; filter: contrast(1.10) saturate(1.08) brightness(1.02); }
+    .hero-card-content { position: relative; z-index: 1; }
+    .photo-initials { font-family: var(--serif); font-size: clamp(85px, 9vw, 130px); line-height: .95; letter-spacing: -.1em; color: rgba(255,255,255,.88); }
+    .hero-card-label { text-transform: uppercase; letter-spacing: .22em; font-size: 9px; line-height: 1.7; color: rgba(255,255,255,.72); }
+    .hero-card-bottom { border-top: 1px solid rgba(255,255,255,.25); padding-top: 20px; margin-top: 22px; }
+    .hero-card-bottom strong { font-family: var(--serif); font-size: 24px; font-weight: 400; display: block; margin-bottom: 6px; }
+    .hero-card-bottom span { font-size: 11px; color: rgba(255,255,255,.75); line-height: 1.6; }
+    .floating-tag { position: absolute; z-index: 4; bottom: 42px; right: -6px; background: var(--wine); padding: 16px 20px; box-shadow: 0 15px 40px rgba(0,0,0,.18); }
+    .floating-tag b { display: block; font-family: var(--serif); font-size: 24px; font-weight: 500; }
+    .floating-tag span { display: block; font-size: 9px; letter-spacing: .16em; text-transform: uppercase; margin-top: 3px; opacity: .8; }
+
+    /* Brand strip */
+    .promise-strip { background: #f2eff5; border-bottom: 1px solid var(--line); }
+    .promise-grid { display: grid; grid-template-columns: repeat(4,1fr); }
+    .promise-item { display: flex; gap: 12px; align-items: center; padding: 22px 19px; border-right: 1px solid var(--line); font-size: 11px; line-height: 1.55; color: var(--purple); font-weight: 700; }
+    .promise-item:first-child { border-left: 1px solid var(--line); }
+    .promise-number { font-family: var(--serif); font-size: 26px; font-weight: 500; opacity: .58; }
+
+    /* Pain points */
+    .section-heading { max-width: 810px; margin-bottom: 45px; }
+    .section-heading.center { margin-left: auto; margin-right: auto; text-align: center; }
+    .section-heading.center .eyebrow { justify-content: center; }
+    .section-heading.center .lead { margin-left: auto; margin-right: auto; }
+    .pain-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 15px; }
+    .pain-card { padding: 27px 24px; border: 1px solid var(--line); background: white; min-height: 220px; }
+    .pain-card .symbol { width: 37px; height: 37px; border: 1px solid #cfc5dc; color: var(--purple); display: grid; place-items: center; border-radius: 50%; margin-bottom: 27px; font-family: var(--serif); font-size: 18px; }
+    .pain-card h3 { font-family: var(--serif); font-weight: 500; font-size: 22px; }
+    .pain-card p { color: #706977; font-size: 12px; line-height: 1.8; margin: 0; }
+    .section-callout { margin-top: 30px; background: var(--purple); color: white; padding: 27px 32px; display: flex; align-items: center; justify-content: space-between; gap: 26px; }
+    .section-callout p { font-family: var(--serif); font-size: clamp(21px,2.2vw,29px); line-height: 1.4; margin: 0; max-width: 780px; }
+
+    /* Deliverables */
+    .deliverable-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 14px; }
+    .deliverable { padding: 30px; border: 1px solid rgba(255,255,255,.18); display: grid; grid-template-columns: 50px minmax(0,1fr); gap: 18px; background: rgba(255,255,255,.035); transition: background .25s, transform .25s; }
+    .deliverable:hover { background: rgba(255,255,255,.08); transform: translateY(-3px); }
+    .deliverable-num { width: 48px; height: 48px; border: 1px solid rgba(255,255,255,.37); border-radius: 50%; display: grid; place-items: center; font-family: var(--serif); font-size: 20px; color: #e3d8eb; }
+    .deliverable h3 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0 0 9px; }
+    .deliverable p { font-size: 13px; line-height: 1.8; color: rgba(255,255,255,.76); margin: 0; }
+    .deliverable .micro { display: block; font-size: 9px; text-transform: uppercase; letter-spacing: .15em; color: #d8cbe3; margin-top: 17px; font-weight: 700; }
+
+    /* 30 days */
+    .timeline { display: grid; grid-template-columns: repeat(4,1fr); gap: 0; margin-top: 51px; border-top: 1px solid var(--line); }
+    .phase { padding: 26px 25px 0 0; position: relative; }
+    .phase::before { content: ''; position: absolute; width: 10px; height: 10px; background: var(--wine); border: 3px solid var(--paper); border-radius: 50%; top: -6px; left: 0; box-shadow: 0 0 0 1px var(--wine); }
+    .phase .week { display: block; margin-top: 12px; font-size: 9px; letter-spacing: .2em; text-transform: uppercase; color: var(--wine); font-weight: 700; }
+    .phase h3 { font-family: var(--serif); font-weight: 500; margin: 12px 0; }
+    .phase p { font-size: 12px; line-height: 1.8; color: #6d6572; margin: 0; }
+    .days-note { display: flex; gap: 18px; align-items: flex-start; margin-top: 39px; padding: 24px 27px; background: white; border-left: 3px solid var(--wine); box-shadow: var(--shadow); }
+    .days-note strong { color: var(--wine); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; min-width: 140px; padding-top: 3px; }
+    .days-note p { font-size: 13px; line-height: 1.8; margin: 0; color: #5f5767; }
+
+    /* Bonus */
+    .bonus-layout { display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; gap: clamp(35px,7vw,95px); }
+    .bonus-art { min-height: 420px; position: relative; display: grid; place-items: center; }
+    .bonus-circle { width: min(100%, 390px); aspect-ratio: 1/1; border: 1px solid rgba(255,255,255,.25); border-radius: 50%; display: grid; place-items: center; position: relative; }
+    .bonus-circle::before, .bonus-circle::after { content: ''; position: absolute; border: 1px solid rgba(255,255,255,.16); border-radius: 50%; }
+    .bonus-circle::before { inset: 24px; }
+    .bonus-circle::after { inset: 48px; }
+    .bonus-mark { position: relative; z-index: 1; text-align: center; }
+    .bonus-mark .star { font-size: 33px; color: #dfcddd; }
+    .bonus-mark b { display: block; font-family: var(--serif); font-weight: 400; font-size: clamp(35px,4vw,55px); line-height: 1.05; margin-top: 17px; }
+    .bonus-mark span { display: block; font-size: 9px; text-transform: uppercase; letter-spacing: .24em; margin-top: 13px; color: rgba(255,255,255,.73); }
+    .bonus-content h2 { margin-bottom: 22px; }
+    .bonus-content > p { color: rgba(255,255,255,.78); font-size: 15px; line-height: 1.85; }
+    .bonus-list { margin-top: 27px; display: grid; gap: 0; }
+    .bonus-row { display: grid; grid-template-columns: 28px 1fr; gap: 12px; padding: 16px 0; border-top: 1px solid rgba(255,255,255,.18); }
+    .bonus-row .check { color: #dbc9e5; font-size: 17px; }
+    .bonus-row b { display: block; font-size: 13px; margin-bottom: 5px; }
+    .bonus-row span { display: block; color: rgba(255,255,255,.72); font-size: 12px; line-height: 1.7; }
+    .bonus-disclaimer { color: rgba(255,255,255,.56); font-size: 10px; line-height: 1.75; margin-top: 17px; }
+
+    /* Stylist and expertise */
+    .stylist-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 46px; align-items: center; }
+    .stylist-visual { background: #eee8f2; min-height: 430px; padding: 36px; position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; }
+    .stylist-visual::before { content: 'CK'; position: absolute; right: -20px; bottom: -80px; font-family: var(--serif); font-size: 270px; letter-spacing: -.12em; color: rgba(63,48,93,.08); }
+    .stylist-visual > * { position: relative; z-index: 1; }
+    .stylist-quote { font-family: var(--serif); font-size: clamp(31px,3.5vw,47px); line-height: 1.22; color: var(--purple); max-width: 470px; }
+    .stylist-stamp { font-size: 10px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--wine); }
+    .stylist-copy .lead { font-size: 15px; }
+    .stylist-points { display: grid; gap: 13px; margin-top: 23px; }
+    .stylist-point { display: flex; gap: 13px; align-items: flex-start; font-size: 13px; line-height: 1.75; }
+    .stylist-point::before { content: '✦'; color: var(--wine); flex: none; margin-top: 1px; }
+
+    /* Sales */
+    .sales-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 70px; align-items: start; }
+    .sales-quote { font-family: var(--serif); font-size: clamp(32px,4vw,52px); line-height: 1.18; letter-spacing: -.035em; }
+    .sales-quote em { color: #e0c8d9; font-weight: 400; }
+    .sales-copy p { color: rgba(255,255,255,.75); font-size: 14px; line-height: 1.9; }
+    .sales-tactics { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 26px; }
+    .sales-tactic { padding: 19px; border: 1px solid rgba(255,255,255,.19); }
+    .sales-tactic b { display: block; font-size: 12px; margin-bottom: 7px; }
+    .sales-tactic span { display: block; font-size: 11px; color: rgba(255,255,255,.66); line-height: 1.7; }
+
+    /* Team */
+    .team-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 18px; margin-top: 40px; }
+    .team-card { display: grid; grid-template-columns: 136px 1fr; gap: 22px; padding: 27px; background: white; border: 1px solid var(--line); align-items: center; }
+    .team-portrait { width: 136px; aspect-ratio: 4/5; background: linear-gradient(145deg,#e5dbea,#d4c9db); display: grid; place-items: center; overflow: hidden; }
+    .team-portrait img { display: none; width: 100%; height: 100%; object-fit: cover; }
+    .team-initial { color: var(--purple); font-family: var(--serif); font-size: 57px; letter-spacing: -.08em; opacity: .65; }
+    .team-card h3 { font-family: var(--serif); font-size: 27px; font-weight: 500; margin-bottom: 6px; }
+    .team-role { color: var(--wine); text-transform: uppercase; letter-spacing: .13em; font-size: 9px; font-weight: 700; line-height: 1.7; }
+    .team-card p { color: #6d6572; font-size: 12px; line-height: 1.8; margin: 13px 0 0; }
+
+    /* Closing offer */
+    .offer-section { overflow: hidden; }
+    .offer-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(35px,7vw,90px); align-items: center; }
+    .offer-heading { max-width: 650px; }
+    .offer-heading .lead { color: rgba(255,255,255,.78); }
+    .offer-points { list-style: none; padding: 0; margin: 30px 0 0; display: grid; gap: 12px; }
+    .offer-points li { display: flex; gap: 11px; align-items: flex-start; font-size: 13px; line-height: 1.7; color: rgba(255,255,255,.88); }
+    .offer-points li::before { content: '✓'; color: #e2cfe7; font-weight: 700; }
+    .price-card { position: relative; color: var(--black); background: white; padding: clamp(26px,3.8vw,45px); box-shadow: 0 25px 80px rgba(0,0,0,.18); }
+    .offer-badge { display: inline-block; background: var(--wine); color: white; padding: 9px 12px; text-transform: uppercase; letter-spacing: .16em; font-size: 9px; font-weight: 700; }
+    .price-card .reference { margin-top: 27px; color: var(--muted); text-transform: uppercase; letter-spacing: .13em; font-size: 9px; font-weight: 700; }
+    .old-price { color: #87818b; font-size: 25px; text-decoration: line-through; text-decoration-thickness: 1px; margin-top: 5px; }
+    .new-price { display: flex; align-items: baseline; gap: 10px; white-space: nowrap; color: var(--purple); font-family: var(--serif); font-size: clamp(58px,6.4vw,85px); letter-spacing: -.07em; line-height: 1.15; margin-top: 3px; }
+    .new-price small { font-family: var(--sans); font-size: 20px; letter-spacing: 0; font-weight: 600; }
+    .saving { color: var(--wine); background: #f4e9e7; font-weight: 700; display: inline-block; padding: 7px 10px; font-size: 10px; letter-spacing: .04em; margin-top: 10px; }
+    .price-card .included { border-top: 1px solid var(--line); margin-top: 24px; padding-top: 22px; }
+    .price-card .included b { display: block; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 13px; }
+    .price-card .included span { display: block; font-size: 12px; color: #655d6c; line-height: 1.85; }
+    .price-card .btn { width: 100%; margin-top: 25px; min-height: 56px; }
+    .offer-footnote { font-size: 10px; line-height: 1.7; color: #7d7583; margin-top: 15px; }
+    .offer-signature { margin-top: 28px; font-family: var(--serif); font-size: 21px; }
+
+    /* Contact */
+    .contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 70px; align-items: start; }
+    .contact-grid .lead { font-size: 15px; }
+    .contact-steps { list-style: none; padding: 0; margin-top: 27px; display: grid; gap: 14px; }
+    .contact-steps li { display: flex; align-items: flex-start; gap: 13px; color: #5f5767; font-size: 13px; line-height: 1.75; }
+    .contact-steps b { width: 25px; height: 25px; display: grid; place-items: center; flex: none; background: #eee8f2; color: var(--purple); font-size: 10px; border-radius: 50%; }
+    .contact-form { padding: 32px; background: var(--paper); border: 1px solid var(--line); }
+    .form-intro { font-family: var(--serif); font-size: 27px; color: var(--purple); margin-bottom: 23px; }
+    .field { display: grid; gap: 8px; margin-bottom: 16px; }
+    .field label { font-size: 10px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; color: #625a6a; }
+    .field input, .field select, .field textarea { width: 100%; min-height: 47px; border: 1px solid #ddd5e4; background: white; padding: 12px 13px; border-radius: 0; color: var(--black); }
+    .field textarea { min-height: 88px; resize: vertical; }
+    .contact-form .btn { width: 100%; min-height: 52px; }
+    .form-note { font-size: 10px; line-height: 1.7; color: #807787; margin: 12px 0 0; }
+    .form-status { display: none; padding: 12px; background: #eee8f2; color: var(--purple); font-size: 12px; line-height: 1.7; margin-top: 13px; }
+
+    /* Footer */
+    .site-footer { padding: 27px 0; background: var(--black); color: white; }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+    .footer-inner p { margin: 0; font-size: 10px; line-height: 1.7; color: rgba(255,255,255,.6); }
+    .footer-brand { font-family: var(--serif); font-size: 22px; }
+    .footer-brand small { display: block; font: 8px var(--sans); letter-spacing: .22em; text-transform: uppercase; opacity: .6; margin-top: 4px; }
+
+    /* Scroll reveal */
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .65s ease, transform .65s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 980px) {
+      .nav-links { gap: 14px; }
+      .nav-links a:not(.btn) { display: none; }
+      .hero-grid { grid-template-columns: 1fr .8fr; gap: 28px; }
+      .hero-visual { min-height: 420px; }
+      .hero-card { min-height: 370px; }
+      .pain-grid { grid-template-columns: repeat(2,1fr); }
+      .promise-item { padding: 19px 12px; }
+      .promise-number { font-size: 22px; }
+      .bonus-layout { gap: 35px; }
+      .team-card { grid-template-columns: 105px 1fr; gap: 17px; padding: 21px; }
+      .team-portrait { width: 105px; }
+      .contact-grid { gap: 38px; }
+    }
+
+    @media (max-width: 700px) {
+      html { scroll-padding-top: 78px; }
+      .container { width: min(100% - 36px, 560px); }
+      .section { padding: 76px 0; }
+      .nav-inner { min-height: 68px; }
+      .brand { min-width: 0; }
+      .brand-name { font-size: 21px; }
+      .brand-caption { font-size: 7px; }
+      .nav-links .desktop-cta { display: none; }
+      .mobile-cta { display: inline-flex; padding: 12px 13px; font-size: 10px; }
+      .hero { min-height: auto; }
+      .hero-grid { width: calc(100% - 24px); grid-template-columns: 1fr; padding-top: 70px; padding-bottom: 62px; gap: 24px; }
+      h1 { font-size: clamp(47px, 12.5vw, 72px); }
+      h2 { font-size: clamp(36px, 10vw, 51px); }
+      .hero .lead { font-size: 15px; }
+      .hero-visual { min-height: 360px; margin-top: 4px; }
+      .hero-orbit { width: min(100%, 330px); }
+      .hero-card { min-height: 320px; width: min(78%, 280px); padding: 21px; }
+      .photo-initials { font-size: 96px; }
+      .floating-tag { right: 1px; bottom: 25px; padding: 13px 16px; }
+      .floating-tag b { font-size: 20px; }
+      .promise-grid { grid-template-columns: 1fr 1fr; }
+      .promise-item { border-bottom: 1px solid var(--line); padding: 15px 12px; }
+      .promise-item:nth-child(odd) { border-left: 1px solid var(--line); }
+      .promise-item:nth-child(even) { border-right: 1px solid var(--line); }
+      .section-heading { margin-bottom: 30px; }
+      .pain-grid { gap: 10px; }
+      .pain-card { padding: 19px 16px; min-height: 205px; }
+      .pain-card .symbol { margin-bottom: 20px; }
+      .pain-card h3 { font-size: 19px; }
+      .pain-card p { font-size: 11px; }
+      .section-callout { padding: 23px; align-items: flex-start; flex-direction: column; }
+      .section-callout .btn { width: 100%; }
+      .deliverable-grid { grid-template-columns: 1fr; }
+      .deliverable { padding: 23px; grid-template-columns: 42px 1fr; gap: 14px; }
+      .deliverable-num { width: 40px; height: 40px; font-size: 17px; }
+      .deliverable h3 { font-size: 23px; }
+      .timeline { grid-template-columns: 1fr; border-top: 0; border-left: 1px solid var(--line); margin: 30px 0 0 5px; padding-left: 21px; }
+      .phase { padding: 0 0 28px 0; }
+      .phase::before { left: -27px; top: 5px; }
+      .phase .week { margin-top: 0; }
+      .days-note { flex-direction: column; gap: 9px; padding: 21px; }
+      .bonus-layout { grid-template-columns: 1fr; gap: 20px; }
+      .bonus-art { min-height: 300px; order: 2; }
+      .bonus-circle { width: min(82%, 300px); }
+      .bonus-mark b { font-size: 38px; }
+      .bonus-content { order: 1; }
+      .stylist-grid { grid-template-columns: 1fr; gap: 29px; }
+      .stylist-visual { min-height: 320px; padding: 27px; }
+      .stylist-visual::before { font-size: 220px; }
+      .stylist-quote { font-size: 36px; }
+      .sales-grid { grid-template-columns: 1fr; gap: 27px; }
+      .sales-tactics { grid-template-columns: 1fr 1fr; }
+      .team-grid { grid-template-columns: 1fr; gap: 12px; margin-top: 29px; }
+      .team-card { grid-template-columns: 100px 1fr; padding: 18px; gap: 15px; }
+      .team-portrait { width: 100px; }
+      .team-card h3 { font-size: 24px; }
+      .offer-grid { grid-template-columns: 1fr; gap: 34px; }
+      .price-card { padding: 27px 23px; }
+      .new-price { font-size: clamp(65px, 17vw, 82px); }
+      .contact-grid { grid-template-columns: 1fr; gap: 28px; }
+      .contact-form { padding: 23px; }
+      .footer-inner { align-items: flex-start; flex-direction: column; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!--
+    PERSONALIZAÇÃO RÁPIDA
+    No final deste arquivo, procure por: const CONFIG
+    Você pode inserir o WhatsApp comercial e URLs de imagens.
+    Exemplo de WhatsApp: 5531999999999 (país + DDD + número, sem símbolos)
+  -->
+
+  <header class="topbar">
+    <div class="container nav-inner">
+      <a href="#inicio" class="brand" aria-label="Essência CK - início">
+        <img id="brandLogo" alt="Logo Essência CK">
+        <span id="brandFallback">
+          <span class="brand-name">Essência CK</span>
+          <span class="brand-caption">Imagem · Estratégia · Vendas</span>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a href="#metodo">A proposta</a>
+        <a href="#plano30">Plano de 30 dias</a>
+        <a href="#especialistas">Quem somos</a>
+        <a class="btn btn-primary btn-arrow desktop-cta" href="#investimento">Ver proposta</a>
+      </nav>
+      <a class="btn btn-primary mobile-cta" href="#investimento">Ver proposta ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Proposta personalizada · Márcia Lelis</span>
+          <h1 class="serif">Seu próximo nível no mercado imobiliário <span>começa com estratégia.</span></h1>
+          <p class="lead">Uma consultoria prática e personalizada para posicionar sua marca nas redes sociais, atrair oportunidades para seus imóveis e transformar sua presença digital em uma ferramenta real de negócio, sem deixar que o conteúdo tome conta da sua rotina.</p>
+          <div class="hero-actions">
+            <a href="#investimento" class="btn btn-primary btn-arrow">Conhecer minha proposta</a>
+            <a href="#metodo" class="btn btn-outline">Ver o que está incluído</a>
+          </div>
+          <div class="hero-meta">
+            <span>30 DIAS DE ACOMPANHAMENTO</span><i class="meta-dot"></i><span>PLANO FEITO PARA VOCÊ</span>
+          </div>
+        </div>
+        <div class="hero-visual reveal" aria-label="Apresentação da consultoria">
+          <div class="hero-orbit"></div>
+          <div class="hero-card">
+            <img class="hero-photo" id="marciaHeroPhoto" alt="Foto de Márcia Lelis">
+            <div class="hero-card-content">
+            </div>
+            <div class="hero-card-content hero-card-bottom">
+              <strong>Márcia Lelis</strong>
+              <span>Posicionamento digital · Mercado imobiliário</span>
+            </div>
+          </div>
+          <div class="floating-tag"><b>30 dias</b><span>de plano & execução</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="promise-strip" aria-label="Pilares da consultoria">
+      <div class="container promise-grid">
+        <div class="promise-item"><span class="promise-number">01</span><span>Posicionamento<br>e conteúdo</span></div>
+        <div class="promise-item"><span class="promise-number">02</span><span>Tráfego pago<br>imobiliário</span></div>
+        <div class="promise-item"><span class="promise-number">03</span><span>Imagem pessoal<br>com intenção</span></div>
+        <div class="promise-item"><span class="promise-number">04</span><span>Vendas, IA<br>e produtividade</span></div>
+      </div>
+    </section>
+
+    <!-- OPPORTUNITY / NEED -->
+    <section class="section" id="oportunidade">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow purple">A oportunidade</span>
+          <h2 class="serif">Não é sobre postar mais. É sobre <span class="wine-text">comunicar melhor e vender com direção.</span></h2>
+          <p class="lead">No mercado imobiliário, cada imóvel tem seus diferenciais, cada cliente tem suas dúvidas e cada atendimento pode ser o começo de uma negociação. Sua presença digital precisa conectar esses pontos com consistência.</p>
+        </div>
+        <div class="pain-grid">
+          <article class="pain-card reveal"><div class="symbol">↗</div><h3>Conteúdo com intenção</h3><p>Uma pauta planejada para apresentar imóveis, gerar confiança e mostrar por que vale a pena conversar com você.</p></article>
+          <article class="pain-card reveal"><div class="symbol">◎</div><h3>Anúncios mais estratégicos</h3><p>Entender como estruturar campanhas, públicos e criativos de acordo com os objetivos de cada imóvel.</p></article>
+          <article class="pain-card reveal"><div class="symbol">✦</div><h3>Tempo bem utilizado</h3><p>Organizar gravações, reaproveitar ideias e usar IA para reduzir tarefas repetitivas e ganhar agilidade.</p></article>
+          <article class="pain-card reveal"><div class="symbol">◇</div><h3>Atendimento que conduz</h3><p>Fortalecer a conversa com potenciais compradores, fazer perguntas melhores e acompanhar cada oportunidade.</p></article>
+        </div>
+        <div class="section-callout reveal">
+          <p>Vamos construir um processo que une presença digital, imagem, conteúdo e vendas, pensado para a sua realidade.</p>
+          <a href="#metodo" class="btn btn-light btn-arrow">Conhecer o método</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPLETE SERVICE -->
+    <section class="section section-dark" id="metodo">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">O que vamos construir juntas</span>
+          <h2 class="serif">Uma estratégia completa. <span style="color:#dacde6;font-style:italic">Do planejamento à prática.</span></h2>
+          <p class="lead">Durante 30 dias, trabalharemos lado a lado para estruturar sua comunicação, colocar o plano em movimento e deixar você mais preparada para manter a evolução depois do acompanhamento.</p>
+        </div>
+
+        <div class="deliverable-grid">
+          <article class="deliverable reveal"><div class="deliverable-num">01</div><div><h3>Posicionamento e mensagem</h3><p>Vamos definir como você quer ser percebida no mercado imobiliário, quais diferenciais comunicar e que temas ajudam o público a entender seu valor e confiar no seu atendimento.</p><span class="micro">Direção de marca pessoal</span></div></article>
+          <article class="deliverable reveal"><div class="deliverable-num">02</div><div><h3>Cronograma de conteúdo</h3><p>Um calendário editorial personalizado com temas para imóveis, lançamentos, bastidores, dúvidas frequentes, autoridade profissional e chamadas para iniciar uma conversa.</p><span class="micro">Planejamento com objetivo</span></div></article>
+          <article class="deliverable reveal"><div class="deliverable-num">03</div><div><h3>Dois dias de gravação</h3><p>Reservaremos dois dias no mês para produzir conteúdos em lote. Chegaremos com pautas e roteiros para aproveitar melhor o tempo e gravar com mais clareza, segurança e consistência.</p><span class="micro">Captação mensal planejada</span></div></article>
+          <article class="deliverable reveal"><div class="deliverable-num">04</div><div><h3>Edição, artes e apoio às redes</h3><p>Durante os 30 dias, acompanharemos a execução do calendário, com edição de vídeos, criação de artes e orientação das publicações dentro do escopo combinado.</p><span class="micro">Produção e acompanhamento</span></div></article>
+          <article class="deliverable reveal"><div class="deliverable-num">05</div><div><h3>Tráfego pago para imóveis</h3><p>Você aprenderá a estruturar e acompanhar anúncios: configuração de campanhas e públicos, escolha de objetivos, criativos, leitura de indicadores e ajustes para buscar melhores oportunidades.</p><span class="micro">Estratégia + aprendizado prático</span></div></article>
+          <article class="deliverable reveal"><div class="deliverable-num">06</div><div><h3>Técnicas de venda e conversão</h3><p>Praticaremos abordagens, perguntas de qualificação, tratamento de objeções, acompanhamento de interessados e formas de conduzir a conversa para o próximo passo sem pressão desnecessária.</p><span class="micro">Da primeira mensagem ao follow-up</span></div></article>
+          <article class="deliverable reveal"><div class="deliverable-num">07</div><div><h3>IA para ganhar tempo</h3><p>Vamos aplicar ferramentas de inteligência artificial disponíveis no mercado para criar ideias, estruturar roteiros, adaptar descrições de imóveis, organizar tarefas e acelerar atividades recorrentes.</p><span class="micro">Tecnologia aplicada à rotina</span></div></article>
+          <article class="deliverable reveal"><div class="deliverable-num">08</div><div><h3>Stylist para sua presença</h3><p>Orientação objetiva de imagem pessoal para escolher looks de gravação, visitas, reuniões e ocasiões específicas, conectando sua apresentação ao tipo de mensagem que deseja transmitir.</p><span class="micro">Imagem pessoal sem complicação</span></div></article>
+        </div>
+        <p style="font-size:10px;line-height:1.75;color:rgba(255,255,255,.55);margin:22px 0 0">O volume de publicações, peças, vídeos e campanhas será alinhado no planejamento inicial. A verba de anúncios e eventuais assinaturas de ferramentas de terceiros não estão incluídas no investimento da consultoria.</p>
+      </div>
+    </section>
+
+    <!-- 30 DAYS -->
+    <section class="section section-soft" id="plano30">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow wine">Como os 30 dias funcionam</span>
+          <h2 class="serif">Um passo a passo personalizado para <span class="purple-text">sair do plano e entrar em ação.</span></h2>
+          <p class="lead">O acompanhamento será organizado por fases para que você saiba o que estamos construindo, o que precisa fazer e qual será o próximo movimento.</p>
+        </div>
+        <div class="timeline">
+          <article class="phase reveal"><span class="week">Semana 01 · Diagnóstico</span><h3>Alinhar e planejar</h3><p>Entender seus objetivos, imóveis prioritários, rotina, público, posicionamento e canais. Configurar a base do calendário e definir as primeiras pautas.</p></article>
+          <article class="phase reveal"><span class="week">Semana 02 · Produção</span><h3>Gravar e preparar</h3><p>Realizar a primeira sessão de gravação, produzir conteúdos, editar materiais iniciais e organizar a estrutura das campanhas e anúncios.</p></article>
+          <article class="phase reveal"><span class="week">Semana 03 · Ativação</span><h3>Publicar e testar</h3><p>Realizar a segunda sessão de gravação, colocar as peças planejadas em circulação e acompanhar as primeiras respostas e indicadores disponíveis.</p></article>
+          <article class="phase reveal"><span class="week">Semana 04 · Otimização</span><h3>Ajustar e continuar</h3><p>Revisar o que foi executado, aprender com os dados, ajustar a comunicação e entregar orientações para manter a rotina após o acompanhamento.</p></article>
+        </div>
+        <div class="days-note reveal"><strong>Dois dias de gravação</strong><p>As duas datas serão combinadas com antecedência para se encaixarem na sua agenda. Cada encontro terá pautas e objetivos definidos para produzir conteúdo de maneira mais eficiente.</p></div>
+      </div>
+    </section>
+
+    <!-- BONUS IMOBTECH -->
+    <section class="section section-wine" id="bonus">
+      <div class="container bonus-layout">
+        <div class="bonus-art reveal">
+          <div class="bonus-circle"><div class="bonus-mark"><div class="star">✦</div><b>ImobTech<br>Inteligente</b><span>Bônus especial · Essência CK</span></div></div>
+        </div>
+        <div class="bonus-content reveal">
+          <span class="eyebrow">Um presente para acelerar sua rotina</span>
+          <h2 class="serif">Bônus especial: <span style="color:#e3cddf;font-style:italic">ImobTech Inteligente.</span></h2>
+          <p>Além da consultoria, você terá um mini-kit prático de tecnologia aplicada ao mercado imobiliário para transformar tarefas repetitivas em processos mais simples e consistentes.</p>
+          <div class="bonus-list">
+            <div class="bonus-row"><div class="check">✓</div><div><b>Biblioteca de prompts para imóveis</b><span>Comandos práticos para criar descrições, roteiros de vídeos, chamadas para anúncios e respostas para perguntas frequentes.</span></div></div>
+            <div class="bonus-row"><div class="check">✓</div><div><b>Fluxo de atendimento inteligente</b><span>Modelos de mensagens e follow-up para organizar o contato com interessados e não deixar conversas esfriarem por falta de processo.</span></div></div>
+            <div class="bonus-row"><div class="check">✓</div><div><b>Mapa de ferramentas úteis</b><span>Orientação para escolher e aplicar ferramentas de IA e produtividade de acordo com suas tarefas, sem complicar sua rotina com tecnologia desnecessária.</span></div></div>
+            <div class="bonus-row"><div class="check">✓</div><div><b>Rotina de conteúdo reaproveitável</b><span>Um método para transformar uma gravação em diferentes formatos e aproveitar melhor cada pauta ao longo do calendário.</span></div></div>
+          </div>
+          <p class="bonus-disclaimer">As ferramentas de terceiros podem ter planos gratuitos, pagos ou limites próprios. O bônus contempla orientação e modelos de uso; assinaturas externas não estão incluídas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERSONAL STYLIST -->
+    <section class="section" id="imagem">
+      <div class="container stylist-grid">
+        <div class="stylist-visual reveal">
+          <span class="stylist-stamp">Imagem pessoal · Estratégia</span>
+          <div class="stylist-quote">Sua imagem também comunica antes mesmo de você começar a falar.</div>
+          <span class="stylist-stamp">Presença alinhada à sua mensagem</span>
+        </div>
+        <div class="stylist-copy reveal">
+          <span class="eyebrow purple">Stylist aplicado à sua rotina</span>
+          <h2 class="serif">Presença profissional, <span class="wine-text">sem looks improvisados.</span></h2>
+          <p class="lead">A consultoria de imagem será objetiva e conectada à sua comunicação: vamos ajudar você a escolher o que vestir para gravar, apresentar um imóvel, participar de reuniões e estar diante de clientes.</p>
+          <div class="stylist-points">
+            <div class="stylist-point">Combinações práticas para as gravações e conteúdos planejados.</div>
+            <div class="stylist-point">Orientação de peças, cores e acessórios de acordo com a ocasião.</div>
+            <div class="stylist-point">Uma imagem coerente com sua personalidade, seus objetivos e o público que deseja alcançar.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SALES -->
+    <section class="section section-dark" id="vendas">
+      <div class="container sales-grid">
+        <div class="reveal">
+          <span class="eyebrow">Conteúdo atrai. Relacionamento desenvolve.</span>
+          <div class="sales-quote">A oportunidade não termina no clique. <em>É ali que começa a conversa.</em></div>
+        </div>
+        <div class="sales-copy reveal">
+          <p>Vamos conectar sua comunicação ao seu processo comercial para que você não dependa apenas de visualizações. O foco é preparar você para conduzir o potencial comprador com atenção, clareza e próximos passos definidos.</p>
+          <div class="sales-tactics">
+            <div class="sales-tactic"><b>Qualificação</b><span>Identificar momento, necessidade, perfil e intenção do interessado.</span></div>
+            <div class="sales-tactic"><b>Objeções</b><span>Responder dúvidas com segurança, informação e escuta ativa.</span></div>
+            <div class="sales-tactic"><b>Follow-up</b><span>Planejar retornos úteis, sem deixar o relacionamento ao acaso.</span></div>
+            <div class="sales-tactic"><b>Próximo passo</b><span>Conduzir a conversa para visita, reunião ou envio de informações relevantes.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPECIALISTS -->
+    <section class="section section-soft" id="especialistas">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow purple">Quem estará ao seu lado</span>
+          <h2 class="serif">Duas especialidades. <span class="wine-text">Uma estratégia conectada.</span></h2>
+          <p class="lead">A Essência CK reúne posicionamento, comunicação, vendas e imagem para ajudar sua marca a se apresentar com mais intenção em cada ponto de contato.</p>
+        </div>
+        <div class="team-grid">
+          <article class="team-card reveal">
+            <div class="team-portrait"><img id="ketlenPhoto" alt="Foto de Ketlen Silva"><span class="team-initial" id="ketlenInitial">KS</span></div>
+            <div><h3>Ketlen Silva</h3><div class="team-role">Sócia · Vendas & Mídias Sociais</div><p>Estratégia de conteúdo, posicionamento nas redes, anúncios e visão comercial para conectar comunicação a oportunidades de negócio.</p></div>
+          </article>
+          <article class="team-card reveal">
+            <div class="team-portrait"><img id="camilaPhoto" alt="Foto de Camila Balbo"><span class="team-initial" id="camilaInitial">CB</span></div>
+            <div><h3>Camila Balbo</h3><div class="team-role">Sócia · Imagem Corporativa</div><p>Imagem pessoal e corporativa para alinhar presença, estilo e intenção à mensagem que você quer transmitir no mercado.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- INVESTMENT / SPECIAL OFFER -->
+    <section class="section section-dark offer-section" id="investimento">
+      <div class="container offer-grid">
+        <div class="offer-heading reveal">
+          <span class="eyebrow">Condição especial para Márcia Lelis</span>
+          <h2 class="serif">Vamos transformar sua presença digital em um <span style="color:#decde7;font-style:italic">plano de ação.</span></h2>
+          <p class="lead">Você não precisa resolver tudo sozinha nem tentar descobrir cada ferramenta por tentativa e erro. Vamos organizar o caminho, construir os materiais e trabalhar lado a lado para colocar sua estratégia em prática.</p>
+          <ul class="offer-points">
+            <li>Plano personalizado para o mercado imobiliário.</li>
+            <li>30 dias de acompanhamento, planejamento e execução dentro do escopo acordado.</li>
+            <li>Dois dias de gravação, edição de vídeos, artes e calendário de conteúdo.</li>
+            <li>Treinamento prático em tráfego pago, vendas e uso de IA.</li>
+            <li>Orientação de imagem pessoal e bônus ImobTech Inteligente.</li>
+          </ul>
+          <div class="offer-signature">Essência CK <span style="color:#decde7">✦</span></div>
+        </div>
+        <div class="price-card reveal">
+          <span class="offer-badge">Condição especial de fechamento</span>
+          <div class="reference">Valor de referência da consultoria completa</div>
+          <div class="old-price">R$ 5.800,00</div>
+          <div class="reference" style="color:var(--wine);margin-top:23px">Investimento especial</div>
+          <div class="new-price"><small>R$</small> 3.500<span style="font:500 18px var(--sans);letter-spacing:0">,00</span></div>
+          <div class="saving">R$ 2.300 de economia · aproximadamente 40% off</div>
+          <div class="included"><b>O pacote contempla</b><span>Estratégia digital + conteúdo + dois dias de gravação + edição e artes + tráfego pago + vendas + IA + stylist + acompanhamento por 30 dias + bônus ImobTech Inteligente.</span></div>
+          <a class="btn btn-primary btn-arrow whatsapp-link" href="#contato">Quero agendar uma reunião de fechamento</a>
+          <p class="offer-footnote">A condição especial será formalizada na reunião, junto com o escopo, cronograma, condições de pagamento e data de início. A verba de mídia paga e assinaturas de ferramentas externas não estão incluídas. Não há promessa de resultados específicos de vendas ou anúncios.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / CLOSE -->
+    <section class="section" id="contato">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <span class="eyebrow wine">Próximo passo</span>
+          <h2 class="serif">Vamos conversar sobre o que faz sentido <span class="purple-text">para você?</span></h2>
+          <p class="lead">Nossa reunião será o momento de alinhar suas prioridades, esclarecer dúvidas e definir como esse plano se encaixa na sua rotina e nos imóveis que deseja impulsionar.</p>
+          <ul class="contact-steps">
+            <li><b>1</b><span>Entendemos seus objetivos e desafios atuais.</span></li>
+            <li><b>2</b><span>Alinhamos o escopo, o cronograma e a condição da proposta.</span></li>
+            <li><b>3</b><span>Definimos os próximos passos para começar com clareza.</span></li>
+          </ul>
+        </div>
+        <form class="contact-form reveal" id="meetingForm">
+          <div class="form-intro">Vamos dar o próximo passo?</div>
+          <div class="field"><label for="nome">Seu nome</label><input id="nome" name="nome" autocomplete="name" placeholder="Márcia Lelis" required></div>
+          <div class="field"><label for="objetivo">Qual é sua prioridade hoje?</label><select id="objetivo" name="objetivo" required><option value="" disabled selected>Selecione uma opção</option><option>Posicionar minha marca nas redes sociais</option><option>Anunciar meus imóveis com mais estratégia</option><option>Organizar conteúdo e gravações</option><option>Melhorar meu atendimento e minhas vendas</option><option>Quero estruturar tudo isso em conjunto</option></select></div>
+          <div class="field"><label for="mensagem">O que você gostaria de alinhar na reunião?</label><textarea id="mensagem" name="mensagem" placeholder="Conte brevemente o que seria mais importante para você."></textarea></div>
+          <button type="submit" class="btn btn-primary btn-arrow">Preparar mensagem para a reunião</button>
+          <div class="form-status" id="formStatus" role="status"></div>
+          <p class="form-note">Este formulário prepara uma mensagem para abrir uma conversa no WhatsApp. Ele não armazena os dados enviados. O número comercial deve ser configurado no código antes da publicação.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">Essência CK<small>Imagem · Estratégia · Vendas</small></div>
+      <p>Proposta personalizada para Márcia Lelis.<br>© <span id="year"></span> Essência CK. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    /* ====================================================
+       CONFIGURAÇÃO FÁCIL — EDITE APENAS ESTE BLOCO
+
+       WhatsApp: país + DDD + número, só dígitos.
+       Exemplo fictício: 5531999999999
+
+       Imagens: use URLs públicas (https://...) ou caminhos
+       relativos, como "imagens/marcia.jpg", se os arquivos
+       estiverem dentro da pasta do projeto.
+    ==================================================== */
+    const CONFIG = {
+      whatsapp: "",
+      imagens: {
+        logo: "",
+        marcia: "https://www.essenciack.com.br/wp-content/uploads/2026/10/Capturar.png",
+        ketlen: "https://www.essenciack.com.br/wp-content/uploads/2026/10/DSC_0653-scaled-e1791941690804.jpg",
+        camila: "https://www.essenciack.com.br/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-23-at-23.09.40-e1791941750329.jpeg"
+      }
+    };
+
+    // Ano do rodapé
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Imagem da marca
+    const brandLogo = document.getElementById('brandLogo');
+    if (CONFIG.imagens.logo && CONFIG.imagens.logo.trim()) {
+      brandLogo.src = CONFIG.imagens.logo.trim();
+      brandLogo.onload = () => {
+        brandLogo.style.display = 'block';
+        document.getElementById('brandFallback').style.display = 'none';
+      };
+    }
+
+    // Foto de Márcia na capa
+    const marciaPhoto = document.getElementById('marciaHeroPhoto');
+    if (CONFIG.imagens.marcia && CONFIG.imagens.marcia.trim()) {
+      marciaPhoto.src = CONFIG.imagens.marcia.trim();
+      marciaPhoto.onload = () => {
+        marciaPhoto.style.display = 'block';
+        document.querySelector('.photo-initials').style.display = 'none';
+      };
+    }
+
+    // Fotos das especialistas: caso não haja imagem, mantêm-se as iniciais
+    [
+      { key: 'ketlen', img: 'ketlenPhoto', initial: 'ketlenInitial' },
+      { key: 'camila', img: 'camilaPhoto', initial: 'camilaInitial' }
+    ].forEach(item => {
+      const src = CONFIG.imagens[item.key];
+      if (!src || !src.trim()) return;
+      const image = document.getElementById(item.img);
+      image.src = src.trim();
+      image.onload = () => {
+        image.style.display = 'block';
+        document.getElementById(item.initial).style.display = 'none';
+      };
+    });
+
+    // WhatsApp e CTAs
+    const phone = (CONFIG.whatsapp || '').replace(/\D/g, '');
+    const defaultMessage = 'Olá, Essência CK! Gostaria de agendar uma reunião para conversar sobre a proposta personalizada para Márcia Lelis.';
+    const whatsUrl = phone.length >= 12
+      ? `https://wa.me/${phone}?text=${encodeURIComponent(defaultMessage)}`
+      : '';
+
+    document.querySelectorAll('.whatsapp-link').forEach(link => {
+      if (whatsUrl) {
+        link.href = whatsUrl;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+      } else {
+        link.href = '#contato';
+      }
+    });
+
+    // Formulário: não coleta dados no site; abre o WhatsApp quando configurado
+    document.getElementById('meetingForm').addEventListener('submit', event => {
+      event.preventDefault();
+      const nome = document.getElementById('nome').value.trim();
+      const objetivo = document.getElementById('objetivo').value;
+      const mensagem = document.getElementById('mensagem').value.trim();
+      const status = document.getElementById('formStatus');
+
+      if (!phone || phone.length < 12) {
+        status.style.display = 'block';
+        status.textContent = 'Para ativar o envio, adicione o WhatsApp comercial no bloco CONFIG no final do arquivo HTML. Depois, salve e atualize a página.';
+        return;
+      }
+
+      const text = [
+        'Olá, Essência CK! Gostaria de conversar sobre a proposta para Márcia Lelis.',
+        `Nome: ${nome}`,
+        `Prioridade: ${objetivo}`,
+        mensagem ? `Pontos para a reunião: ${mensagem}` : ''
+      ].filter(Boolean).join('\n');
+
+      window.open(`https://wa.me/${phone}?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
+      status.style.display = 'block';
+      status.textContent = 'Sua mensagem foi preparada para abrir no WhatsApp. Confira os dados e envie a mensagem por lá.';
+    });
+
+    // Animação leve ao aparecer na tela
+    const revealItems = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      revealItems.forEach(item => observer.observe(item));
+    } else {
+      revealItems.forEach(item => item.classList.add('visible'));
+    }
+  </script>
+</body>
+</html>
